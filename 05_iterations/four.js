@@ -56,7 +56,7 @@ const myCoding =
 
 myCoding.forEach(  (item)=>
 {
-    console.log(item.languagefilename , " " ,item.languagename )
+    console.log(item.languagefilename , " " ,item.languagename)
 })
 
 
