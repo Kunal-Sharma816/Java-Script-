@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #212121;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button{
+    display: block; /* Ensures each span starts on a new line */
+    margin: 10px auto; /* Centers each span and adds spacing */
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: #333; /* Default background color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#grey
+{
+    background-color: grey;
+    border: 2px solid black;
+}
+#white
+{
+    background-color: white;
+    border: 2px solid black;
+}
+#blue
+{
+    background-color: blue;
+    border: 2px solid black;
+}
+#yellow{
+    background-color: yellow;
+    border: 2px solid black;
+}
