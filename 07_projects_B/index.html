@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet">
+    <style>
+        body{
+            background-color: #212121;
+            color: #ffff;      
+        }
+
+        .center
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-size: 30px;
+        }
+
+        #clock
+        {
+            height: 30px;
+            width: 130px;
+            background-color: orange;
+            margin-top: 20px;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class = 'center'>
+        <div id = 'banner'><span>Your local time</span></div>  
+        <div id = 'clock'></div>      
+    </div>
+</body>
+<script src = 'script.js'></script>
+</html>
