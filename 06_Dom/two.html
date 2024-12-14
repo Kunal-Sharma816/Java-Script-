@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+</head>
+<body >
+    <ul class ="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName)
+    {
+        const li = document.createElement('li');
+        li.innerHTML = langName;
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addLanguage('python')
+
+
+    function addOptimizedLanguage(langName)
+    {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    
+    addOptimizedLanguage('java')
+    addOptimizedLanguage("go")
+
+
+    // +++++++++ Edit +++++++++++++++++++
+    const secondlang = document.querySelector("li:nth-child(1)")
+    // secondlang.innerHTML = 'Mojo'  
+    console.log('kunal')
+    if(secondlang)
+    {
+        console.log('Sharma')
+        const new_ = document.createElement('li')
+        new_.textContent = 'mojo'
+        secondlang.replaceWith(new_)
+    }   
+    
+
+
+</script>
+</html>
