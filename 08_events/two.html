@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id='stop'> stop </button>
+    <button id='start'> start </button>
+</body>
+<script>
+    let IntervalId; // Declare the interval variable outside to track it globally
+
+    const saydate = function (str) {
+        console.log(str, Date.now());
+    };
+
+    document.querySelector("#stop").addEventListener("click", function () {
+        if (IntervalId) {
+            clearInterval(IntervalId); // Stop the interval
+            IntervalId = null; // Reset the IntervalId
+            console.log("STOP");
+        }
+    });
+
+    document.querySelector("#start").addEventListener("click", function () {
+        if (!IntervalId) { // Check if there's no active interval
+            console.log("Start");
+            IntervalId = setInterval(saydate, 2000, 'kunal'); // Start a new interval
+        }
+    });
+
+
+
+
+
+</script>
+
+</html>

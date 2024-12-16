@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Concept of Asyn await</h1>
+    <button id = 'stop'> stop </button>
+</body>
+<script>
+    //method-1 : give function directly
+    // setTimeout(function(){
+    //     console.log('kunal');
+    // } , 2000);
+
+
+    // method-2: give reference of the function
+    const saytome = function()
+    {
+        console.log('Kunal')
+    }
+
+    const sto1 = setTimeout(saytome , 2000); // pass reference for clear the message or stop
+    document.querySelector('#stop').addEventListener('click' , function(){
+        clearTimeout(sto1);
+        console.log('Stop')
+    })
+
+
+</script>
+</html>
